@@ -3,7 +3,6 @@
 @section('content')
 
 <div class="row">
-
     <div class="col-lg-6">
       <div class="box box-widget widget-user-2">
         <div class="widget-user-header bg-yellow">

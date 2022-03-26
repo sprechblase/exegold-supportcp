@@ -110,7 +110,7 @@ SOFTWARE.
             @foreach(Docs::all() as $doc)
             <li><a href="{{ route('doc.open', $doc->id) }}"><i class="fa fa-book"></i> {{ $doc->description }}</a></li>
             @endforeach
-            <!-- <li><a href="{{ route('doc.team') }}"><i class="fa fa-users"></i> Teamliste</a></li> -->
+            <li><a href="{{ route('doc.team') }}"><i class="fa fa-users"></i> Teamliste</a></li>
           </ul>
         </li>
 
