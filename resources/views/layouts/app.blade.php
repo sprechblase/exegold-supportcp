@@ -31,23 +31,11 @@ SOFTWARE.
   <link rel="icon" type="image/png" href="http://localhost/public/dist/img/soss.png">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-
-  @if(env('APP_DARKMODE') == true)
-    <link rel="stylesheet" href="http://localhost/public/bower_components/bootstrap/dist/css/bootstrap-midnight.min.css">
-  @else
-    <link rel="stylesheet" href="http://localhost/public/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  @endif
-
+  <link rel="stylesheet" href="http://localhost/public/bower_components/bootstrap/dist/css/bootstrap-midnight.min.css">
   <link rel="stylesheet" href="http://localhost/public/bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="http://localhost/public/bower_components/Ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="http://localhost/public/dist/css/AdminLTE.min.css">
-
-  @if(env('APP_DARKMODE') == true)
-    <link rel="stylesheet" href="http://localhost/public/dist/css/skins/skin-new-midnight.min.css">
-  @else
-    <link rel="stylesheet" href="http://localhost/public/dist/css/skins/skin-black.min.css">
-  @endif
-
+  <link rel="stylesheet" href="http://localhost/public/dist/css/skins/skin-new-midnight.min.css">
   <link rel="stylesheet" href="http://localhost/public/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <link rel="stylesheet" href="http://localhost/public/css/modal-side.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -70,19 +58,11 @@ SOFTWARE.
 
 
 </head>
-@if(env('APP_DARKMODE') == true)
   @guest
   <body class="hold-transition skin-midnight sidebar-collapse">
   @else
   <body class="hold-transition skin-midnight sidebar-mini">
   @endguest
-@else
-  @guest
-  <body class="hold-transition skin-black sidebar-collapse">
-  @else
-  <body class="hold-transition skin-black sidebar-mini">
-  @endguest
-@endif
 
 <div class="wrapper">
 
