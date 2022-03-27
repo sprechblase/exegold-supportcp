@@ -27,7 +27,7 @@ SOFTWARE.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ config('app.name', 'Laravel') }} | Supportsystem</title>
+  <title>{{ env('APP_NAME') }} | Supportsystem</title>
   <link rel="icon" type="image/png" href="http://localhost/public/dist/img/soss.png">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -70,7 +70,7 @@ SOFTWARE.
 
     <p class="logo">
       <span class="logo-mini"><b>RP</b></span>
-      <span class="logo-lg"><b>Roleplay</b> System</span>
+      <span class="logo-lg"><b>{{ env('APP_NAME') }}</b> System</span>
     </p>
 
     <nav class="navbar navbar-static-top" role="navigation">

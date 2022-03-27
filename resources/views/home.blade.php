@@ -113,8 +113,8 @@
         <br>
       Hey {{ Auth::user()->name }} 👋, <br>
         <br>
-      Herzlich willkommen im Supportsystem zur Dokumentation jeglicher Supportfälle von Roleplay-V. <br>
-      Solltest du Probleme mit der Nutzung des Systems haben, melde dich bei deinem zuständigen Vorgesetzten. <br>
+      Herzlich willkommen im Supportsystem zur Dokumentation jeglicher Supportfälle von {{ env('APP_NAME') }}. <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt alias a similique optio odit itaque, autem maxime iure ullam, distinctio ratione veritatis in commodi minus deleniti hic? Ipsum, quaerat.<br>
         <br>
     </div>
   </div>
