@@ -7,7 +7,7 @@
     <div class="box box-widget widget-user-2">
       <div class="widget-user-header bg-yellow">
         <div class="widget-user-image">
-          <img class="img-circle" src="http://localhost/public/dist/img/soss.png" alt="User Avatar">
+          <img class="img-circle" src="{{ env('APP_LOGO') }}" alt="User Avatar">
         </div>
         <!-- /.widget-user-image -->
         <h3 class="widget-user-username">{{ $user->name }} (#{{ $user->id }})</h3>
@@ -15,6 +15,7 @@
       </div>
       <div class="box-footer no-padding">
         <ul class="nav nav-stacked">
+          <li><a href="#">Aktuelle Position <span class="pull-right">{{ Position::where('id', $user->position_id)->first()->position }}</span></a></li>
           <li><a href="#">Email <span class="pull-right">{{ $user->email }}</span></a></li>
           <li><a href="#">Telefonnummer <span class="pull-right"><?php if(empty($user->telefonnummer)){echo "N/A";} else {echo $user->telefonnummer;} ?></span></a></li>
           <li><a href="#">Status <span class="pull-right">{{ $user->account_status }}</span></a></li>

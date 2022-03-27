@@ -7,7 +7,7 @@
       <div class="box box-widget widget-user-2">
         <div class="widget-user-header bg-yellow">
           <div class="widget-user-image">
-            <img class="img-circle" src="http://localhost/public/dist/img/soss.png" alt="User Avatar">
+            <img class="img-circle" src="{{ env('APP_LOGO') }}" alt="User Avatar">
           </div>
           <!-- /.widget-user-image -->
           <h3 class="widget-user-username">{{ $user->name }} (#{{ $user->id }})</h3>

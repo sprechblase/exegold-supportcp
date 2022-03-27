@@ -28,7 +28,7 @@ SOFTWARE.
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ env('APP_NAME') }} | Supportsystem</title>
-  <link rel="icon" type="image/png" href="http://localhost/public/dist/img/soss.png">
+  <link rel="icon" type="image/png" href="{{ env('APP_LOGO') }}">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="http://localhost/public/bower_components/bootstrap/dist/css/bootstrap-midnight.min.css">
@@ -86,7 +86,7 @@ SOFTWARE.
     <section class="sidebar">
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="http://localhost/public/dist/img/soss.png" class="img-circle" alt="User Image">
+          <img src="{{ env('APP_LOGO') }}" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>{{ Auth::user()->name }}</p>
