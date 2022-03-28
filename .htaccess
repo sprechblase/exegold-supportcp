@@ -1,0 +1,17 @@
+<FilesMatch "(.env|.sql)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule ^app/?$ - [F,L]
+RewriteRule ^bootstrap/?$ - [F,L]
+RewriteRule ^config/?$ - [F,L]
+RewriteRule ^database/?$ - [F,L]
+RewriteRule ^resources/?$ - [F,L]
+RewriteRule ^routes/?$ - [F,L]
+RewriteRule ^storage/?$ - [F,L]
+RewriteRule ^tests/?$ - [F,L]
+RewriteRule ^vendor/?$ - [F,L]
+
+DirectoryIndex server.php
