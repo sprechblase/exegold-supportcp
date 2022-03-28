@@ -3,6 +3,8 @@ Order allow,deny
 Deny from all
 </FilesMatch>
 
+DirectoryIndex server.php
+
 RewriteEngine on
 RewriteRule ^app/?$ - [F,L]
 RewriteRule ^bootstrap/?$ - [F,L]
@@ -14,4 +16,7 @@ RewriteRule ^storage/?$ - [F,L]
 RewriteRule ^tests/?$ - [F,L]
 RewriteRule ^vendor/?$ - [F,L]
 
-DirectoryIndex server.php
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) /server.php/$1 [L]
