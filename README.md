@@ -1,6 +1,8 @@
-# Scorpion Support System
+<h1 align="center">Exegold System</h1>
 
-A powerful yet useful Support Structur for big Roleplay Networks .
+<p align="center"><img src="./public/dist/img/preview.png"></p>
+
+A powerful yet useful Support Structur for big roleplay networks.
 
 Licensed under MIT
 
@@ -14,3 +16,7 @@ Licensed under MIT
 *   View team positioning of your teammembers
 *   View logs
 *   Manage your team better and easier
+
+
+___
+<p align="center">Made with ❤️</p>
