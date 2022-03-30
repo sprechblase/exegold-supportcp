@@ -1,6 +1,6 @@
 <h1 align="center">Exegold System</h1>
 
-<p align="center"><img src="./public/dist/img/preview.png"></p>
+<p align="center"><img src="./public/dist/img/preview.PNG"></p>
 
 A powerful yet useful Support Structur for big roleplay networks.
 Licensed under MIT
