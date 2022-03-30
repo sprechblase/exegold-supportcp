@@ -31,30 +31,30 @@ SOFTWARE.
   <link rel="icon" type="image/png" href="{{ env('APP_LOGO') }}">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="http://localhost/public/bower_components/bootstrap/dist/css/bootstrap-midnight.min.css">
-  <link rel="stylesheet" href="http://localhost/public/bower_components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="http://localhost/public/bower_components/Ionicons/css/ionicons.min.css">
-  <link rel="stylesheet" href="http://localhost/public/dist/css/AdminLTE.min.css">
-  <link rel="stylesheet" href="http://localhost/public/dist/css/skins/skin-new-midnight.min.css">
-  <link rel="stylesheet" href="http://localhost/public/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
-  <link rel="stylesheet" href="http://localhost/public/css/modal-side.css">
+  <link rel="stylesheet" href="{{ env('APP_URL') }}public/bower_components/bootstrap/dist/css/bootstrap-midnight.min.css">
+  <link rel="stylesheet" href="{{ env('APP_URL') }}public/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ env('APP_URL') }}public/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="{{ env('APP_URL') }}public/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="{{ env('APP_URL') }}public/dist/css/skins/skin-new-midnight.min.css">
+  <link rel="stylesheet" href="{{ env('APP_URL') }}public/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="{{ env('APP_URL') }}public/css/modal-side.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  <link href="http://localhost/public/css/select2.min.css" rel="stylesheet" />
-  <link href="http://localhost/public/css/daterangepicker-bs3.css" rel="stylesheet" />
+  <link href="{{ env('APP_URL') }}public/css/select2.min.css" rel="stylesheet" />
+  <link href="{{ env('APP_URL') }}public/css/daterangepicker-bs3.css" rel="stylesheet" />
 
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-  <script src="http://localhost/public/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="http://localhost/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="http://localhost/public/dist/js/adminlte.min.js"></script>
-  <script src="http://localhost/public/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-  <script src="http://localhost/public/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-  <script src="http://localhost/public/js/modal-side.js"></script>
-  <script src="http://localhost/public/js/sweetalert2.all.js"></script>
-  <script src="http://localhost/public/js/phpUnserialize.js"></script>
+  <script src="{{ env('APP_URL') }}public/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="{{ env('APP_URL') }}public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="{{ env('APP_URL') }}public/dist/js/adminlte.min.js"></script>
+  <script src="{{ env('APP_URL') }}public/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="{{ env('APP_URL') }}public/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="{{ env('APP_URL') }}public/js/modal-side.js"></script>
+  <script src="{{ env('APP_URL') }}public/js/sweetalert2.all.js"></script>
+  <script src="{{ env('APP_URL') }}public/js/phpUnserialize.js"></script>
   <script src="http://cdn.ckeditor.com/4.9.2/full/ckeditor.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
   <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script src="http://localhost/public/js/daterangepicker.js"></script>
+  <script src="{{ env('APP_URL') }}public/js/daterangepicker.js"></script>
 
 
 </head>
