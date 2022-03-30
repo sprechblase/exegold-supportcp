@@ -44,8 +44,8 @@ CREATE TABLE IF NOT EXISTS `docs` (
 --
 
 INSERT INTO `docs` (`id`, `description`, `iframelink`, `access`, `created_at`, `updated_at`) VALUES
-(1, 'Leitfaden Banzeiten', '<iframe style=\"display:block;width:100%; height: 100vh;\" src=\"\"></iframe>', 'SB, Teamverwaltung, Projektleitung, Administrator, Entwicklungsleitung, Sr Moderator, Moderator, Test Moderator, Entwickler, Supporter, Test Supporter, Guide, Einreisebeamter, Head Administrator', '2018-05-17 15:56:22', '2022-03-05 17:28:36'),
-(2, 'Leitfaden Whitelist', '<iframe style=\"display:block;width:100%; height: 100vh;\" src=\"\"></iframe>', 'SB, Teamverwaltung, Projektleitung, Administrator, Entwicklungsleitung, Sr Moderator, Moderator, Test Moderator, Entwickler, Supporter, Test Supporter, Guide, Einreisebeamter, Head Administrator', '2018-05-17 16:48:24', '2022-03-05 17:28:09');
+(1, 'Leitfaden Banzeiten', '<iframe style=\"display:block;width:100%; height: 100vh;\" src=\"\"></iframe>', 'SB', '2018-05-17 15:56:22', '2022-03-05 17:28:36'),
+(2, 'Leitfaden Whitelist', '<iframe style=\"display:block;width:100%; height: 100vh;\" src=\"\"></iframe>', 'SB', '2018-05-17 16:48:24', '2022-03-05 17:28:09');
 
 -- --------------------------------------------------------
 
@@ -150,26 +150,6 @@ CREATE TABLE IF NOT EXISTS `model_has_roles` (
   KEY `model_has_roles_model_id_model_type_index` (`model_id`,`model_type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `pads`
---
-
-DROP TABLE IF EXISTS `pads`;
-CREATE TABLE IF NOT EXISTS `pads` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `slug` varchar(100) NOT NULL,
-  `type` enum('support','projektleitung','entwicklung') NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `done` enum('YES','NO') NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
 --
 -- Tabellenstruktur für Tabelle `permissions`
 --
@@ -233,20 +213,7 @@ CREATE TABLE IF NOT EXISTS `positions` (
 --
 
 INSERT INTO `positions` (`id`, `position`, `position_description`, `priority`, `created_at`, `updated_at`) VALUES
-(1, 'SB', 'SB', 99999, '2022-03-05 16:23:06', '2022-03-05 16:23:06'),
-(2, 'Teamverwaltung', 'Teamverwaltung', 7000, '2022-03-04 11:37:54', '2022-03-04 11:37:54'),
-(12, 'Projektleitung', 'Projektleitung', 40, '2022-03-05 12:46:16', '2022-03-05 12:46:16'),
-(14, 'Administrator', 'Administrator - Stufe I', 37, '2022-03-05 12:47:04', '2022-03-05 16:20:40'),
-(15, 'Entwicklungsleitung', 'Entwicklungsleitung', 36, '2022-03-05 12:48:00', '2022-03-05 16:20:47'),
-(16, 'Sr Moderator', 'Moderator - Stufe III', 35, '2022-03-05 12:49:20', '2022-03-05 16:20:54'),
-(17, 'Moderator', 'Moderator - Stufe II', 34, '2022-03-05 12:49:50', '2022-03-05 16:20:59'),
-(18, 'Test Moderator', 'Moderator - Stufe I', 33, '2022-03-05 12:50:19', '2022-03-05 16:21:08'),
-(19, 'Entwickler', 'Entwickler', 32, '2022-03-05 12:51:10', '2022-03-05 16:21:19'),
-(20, 'Supporter', 'Supporter - Stufe II', 30, '2022-03-05 12:51:49', '2022-03-05 16:22:03'),
-(21, 'Test Supporter', 'Supporter - Stufe I', 31, '2022-03-05 12:52:01', '2022-03-05 16:22:17'),
-(22, 'Guide', 'Guide', 29, '2022-03-05 12:52:41', '2022-03-05 12:52:41'),
-(23, 'Einreisebeamter', 'Einreisebeamter', 28, '2022-03-05 12:52:53', '2022-03-05 12:52:53'),
-(24, 'Head Administrator', 'Administrator - Stufe II', 38, '2022-03-05 16:18:29', '2022-03-05 16:20:33');
+(1, 'SB', 'SB', 99999, '2022-03-05 16:23:06', '2022-03-05 16:23:06');
 
 -- --------------------------------------------------------
 
@@ -328,7 +295,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `telefonnummer`, `position_id`, `email`, `account_status`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Sprechblase', '', '1', 'sprechblase@hotmail.com', 'FREE', '$2y$10$iGjNWv4LGCPIFqRKo2fTz.GEDd0GaeEV8o5zIdeytJGVquFnqlUB2', 'L6OO3TCApPeIT0ZvLptC7ocf6lOk1ASOg5eyRYFoNo7L8rGL9ygpImD3ycOc', '2018-05-12 15:31:48', '2022-03-07 18:56:36');
+(1, 'Sprechblase', '', '1', 'sprechblase@sprechblase.de', 'FREE', '$2y$10$OK4Mn1zmHroVppb1LhIIre1wWXNGljj6eLpip0Kpavc3mrd6VJvyi', '', '2018-05-12 15:31:48', '2022-03-07 18:56:36');
 
 -- --------------------------------------------------------
 
