@@ -10,7 +10,11 @@
    <span class="info-box-icon bg-green"><i class="ion ion-ios-chatboxes"></i></span>
     <div class="info-box-content">
       <span class="info-box-text">MESSAGE OF THE MONTH</span>
-      <img src="http://localhost/public/dist/img/businesspepe.png" width="60" height="60"></img>
+      @if(strpos(env('APP_MOTD'), 'http') !== false)
+      <img src="{{ env('APP_MOTD') }}" width="60" height="60"></img>
+      @else
+      <span class="info-box-number">{{ env('APP_MOTD') }}</span>
+      @endif
     </div>
   </div>
 </div>
