@@ -20,7 +20,7 @@ Licensed under MIT
 
 1) Clone the repository and upload to webserver:
     ```console
-    $ git clone https://github.com/Sprechblase/support-cp.git
+    $ git clone https://github.com/Sprechblase/exegold-supportcp.git
     ```
 
 2) Go into .env File and setup database and app:
