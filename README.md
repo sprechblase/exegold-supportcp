@@ -23,7 +23,12 @@ Licensed under MIT
     $ git clone https://github.com/Sprechblase/exegold-supportcp.git
     ```
 
-2) Go into .env File and setup database and app:
+2) Import Databas
+    ```console
+    Import the support.sql file into your database
+    ```
+
+3) Go into .env File and setup database and app:
     ```console
     APP_NAME=Exegold
     APP_ENV=local
@@ -40,12 +45,12 @@ Licensed under MIT
     DB_PASSWORD=secret
     ```
 
-3) Load your site and login with the following data:
+4) Load your site and login with the following data:
     ```
     E-Mail: sprechblase@sprechblase.de
     Password: supportcp
     ```
 
-4) Have fun!
+5) Have fun!
 ___
 <p align="center">Made with ❤️</p>
